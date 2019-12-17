@@ -7,9 +7,9 @@ $( ".btn-default" ).click(function() {
     }
     $(this)[0].parentElement.parentElement.children[1].disabled = !$(this)[0].parentElement.parentElement.children[1].disabled;
 });
-
-
-
+setInterval(() => {
+	$("#date")[0].innerHTML = new Date;
+}, 100);
 const currHour = (new Date).getHours();
 const firstHour = 9, lastHour = 17;
 const inps = $("input");
